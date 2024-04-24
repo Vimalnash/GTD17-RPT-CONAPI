@@ -8,7 +8,7 @@ function App() {
   const {setProducts} = CartUseContext();
 
   useEffect(() => {
-    fetch("../db/product.json", {method:"GET"})
+    fetch("../product.json", {method:"GET"})
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
